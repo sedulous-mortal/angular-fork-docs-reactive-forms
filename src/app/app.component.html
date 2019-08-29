@@ -1,8 +1,14 @@
 <h1>Reactive Forms</h1>
 
+<div style="border: 2px solid darkblue">
+<p style="font-weight: 900; color: darkblue"> Parent has: </p>
+<p>Name: {{ this.name }} </p>
+<p>Profile: {{ this.profile }}
+<div>
+
 <nav>
-  <a (click)="toggleEditor('name')">Name Editor</a>
-  <a (click)="toggleEditor('profile')">Profile Editor</a>
+  <a style="border: 2px solid magenta" (click)="toggleEditor('name')">Name Editor</a>
+  <a style="border: 2px solid limegreen" (click)="toggleEditor('profile')">Profile Editor</a>
 </nav>
 
 <app-name-editor *ngIf="showNameEditor"></app-name-editor>

@@ -10,7 +10,8 @@ export class NameEditorComponent {
   name = new FormControl('');
 
   updateName() {
-    this.name.setValue('Nancy');
+    console.log('name to be submitted is', this.name.value)
+    //this.name.setValue('Nancy');
   }
 }
 

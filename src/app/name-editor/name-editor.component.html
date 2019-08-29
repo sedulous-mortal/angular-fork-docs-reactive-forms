@@ -1,15 +1,16 @@
+<div style="border: 2px solid magenta">
 <label>
   Name:
   <input type="text" [formControl]="name">
 </label>
 
-<p>
-  Value: {{ name.value }}
-</p>
-
-<p>
-  <button (click)="updateName()">Update Name</button>
-</p>
+<label> 
+  Submit to parent:
+  <p>
+    <button (click)="updateName()">Update Name</button>
+  </p>
+</label>
+</div>
 
 
 <!-- 
